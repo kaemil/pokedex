@@ -8,6 +8,7 @@ import './css/media.css'
 function App(){
     const [pokemonID,setPokemonID] = useState(1)
     const [pokemonData, setPokemonData] = useState({})
+    const [choosenButton,setChoosenButton] = useState('Name')
 
     //Fetching data from PokeAPI
     useEffect(()=>{
@@ -17,30 +18,15 @@ function App(){
                 setPokemonData(data)})
     },[pokemonID])
 
-    // Creating eventListeners
-    // Making possible for user to use arrow key to change pokemon ID
-    useEffect(()=>{
-        document.addEventListener('keydown',keyLeft)
-        document.addEventListener('keydown',keyRight)
-        return()=>{
-            document.removeEventListener('keydown',keyLeft)
-            document.removeEventListener('keydown',keyRight)
-        }
-    },)
-
-    const keyLeft = (e) =>{
-        if(e.keyCode === 37) idCountDown()
-    }
-
-    const keyRight = (e) =>{
-       if(e.keyCode === 39) idCountUp()
-   }
-
     //Changing ID using buttons
     const idCountDown = () => 
         (pokemonID === 1) ? setPokemonID(151) : setPokemonID(pokemonID - 1)
     const idCountUp = () => 
         (pokemonID === 151) ? setPokemonID(1) : setPokemonID(pokemonID + 1)
+
+    //Changing data on consol after button click
+    const handleButton = (button) => setChoosenButton (button)
+    
 
     return(
       <div className='pokedex'>
@@ -56,9 +42,10 @@ function App(){
         <div className='pokedex__middle'></div>
         <div className='pokedex__rightcard'>              
             <PokemonConsole 
-  
+                choosenButton={choosenButton}
             />
             <PokemonConsoleButton 
+            handleButton={handleButton}
             pokemonData={pokemonData}
             />
         </div>

@@ -2,7 +2,8 @@ import React from 'react';
 
 //Component to render data
 
-function PokemonConsole(){    
+function PokemonConsole({choosenButton}){
+    console.log(choosenButton)
     return(
         <div className="pokedex__screen">
             <div className='pokedex__'> 
