@@ -2,27 +2,26 @@ import React from 'react';
 
 // Component for image and image
 
-export default class PokemonImage extends React.Component{
-     render(){
-        const id = this.props.id
-        let pokImg = []
-        for(let i = 1; i < 152; i++) {
-            let x = Math.floor(Math.random() * 11) + 1
-            if(x < 10) {
-                x = '00' + x;
-            } else if(x < 100) {
-                x = "0" + x;
-            }
-                  
-            pokImg.push(`img/${x}.jpg`)
-            console.log(pokImg)  
+function PokemonImage ({pokemonID}){
+    const imgID = (id)=>{
+        if(id < 10) {
+            id = '00' + id;
+        } else if(id < 100) {
+            id= "0" + id;
         }
-         return(
-             <div className='pokedex__image pokedex__image--frame'>
-                <div className='pokedex__image--inside' key={pokImg[id-1]}>
-                    <img src={pokImg[id-1]} alt="asd" copyright="asdasd" ></img>
-                </div>
-             </div>
-         )
-     }
-   }
+        return id
+    }
+    
+
+        return(
+            <div className='pokedex__image pokedex__image--frame'>
+            <div className='pokedex__image--inside' key={pokemonID}>
+                <img src={`https://assets.pokemon.com/assets/cms2/img/pokedex/full/${imgID(pokemonID)}.png`}
+                alt="asd" copyright="asdasd" ></img>
+            </div>
+            </div>
+        )
+}
+
+
+export default PokemonImage
