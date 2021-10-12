@@ -4,6 +4,8 @@ import PokemonSwitch from './components/PokemonSwitch'
 import PokemonConsoleButton from './components/PokemonConsoleButton'
 import PokemonConsole from './components/PokemonConsole'
 import './css/media.css'
+import './css/pokemonTypesStyle.css'
+import './css/mediaScreen.css'
 
 function App(){
     const [pokemonID,setPokemonID] = useState(1)

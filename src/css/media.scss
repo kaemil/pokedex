@@ -5,8 +5,7 @@
 
 .pokedex {
     &__leftcard {
-        background: rgb(223, 88, 88);
-        background: linear-gradient(0deg, rgba(223, 88, 88, 1) 0%, rgba(221, 49, 49, 1) 32%, rgba(200, 26, 26, 1) 61%, rgba(192, 12, 12, 1) 100%);
+        background-color: #C00C0C;
         padding: 10%;
         padding-bottom: 5%;
     }
@@ -75,8 +74,7 @@
     //Right Card
 
     &__rightcard {
-        background: rgb(223, 88, 88);
-        background: linear-gradient(0deg, rgba(223, 88, 88, 1) 0%, rgba(221, 49, 49, 1) 32%, rgba(200, 26, 26, 1) 61%, rgba(192, 12, 12, 1) 100%);
+       background-color: #C00C0C;
         padding: 0 10% 10% 10%;
     }
 
@@ -159,152 +157,5 @@
     &__buttons--size:focus {
         background: rgb(57, 106, 180);
         background: linear-gradient(0deg, rgba(57, 106, 180, 1) 0%, rgba(38, 93, 176, 1) 32%, rgba(22, 79, 166, 1) 61%, rgba(0, 69, 172, 1) 100%);
-    }
-
-
-}
-
-.pokedex {
-    &__types--bug {
-        background-color: #729F3F;
-    }
-
-    &__types--dragon {
-        background: rgb(241, 110, 87);
-        background: linear-gradient(0deg, rgba(241, 110, 87, 1) 50%, rgba(83, 164, 207, 1) 50%);
-    }
-
-    &__types--fairy {
-        background-color: #FEBAEA;
-    }
-
-    &__types--fire {
-        background-color: #FD7D24;
-    }
-
-    &__types--ghost {
-        background-color: #7B62A3;
-    }
-
-    &__types--ground {
-        background: rgb(171, 152, 66);
-        background: linear-gradient(0deg, rgba(171, 152, 66, 1) 50%, rgba(247, 222, 63, 1) 50%);
-    }
-
-    &__types--normal {
-        background-color: #A4ACAF;
-    }
-
-    &__types--psychic {
-        background-color: #F366B9;
-    }
-
-    &__types--steel {
-        background-color: #9EB7B8;
-    }
-
-    &__types--dark {
-        background-color: #707070;
-    }
-
-    &__types--electric {
-        background-color: #EED535;
-    }
-
-    &__types--fighting {
-        background-color: #D56723;
-    }
-
-    &__types--flying {
-        background: rgb(189, 185, 184);
-        background: linear-gradient(0deg, rgba(189, 185, 184, 1) 50%, rgba(61, 199, 239, 1) 50%);
-    }
-
-    &__types--grass {
-        background-color: #9BCC50;
-    }
-
-    &__types--ice {
-        background-color: #51C4E7;
-    }
-
-    &__types--poison {
-        background-color: #BA7FCA;
-    }
-
-    &__types--rock {
-        background-color: #A38C21;
-    }
-
-    &__types--water {
-        background-color: #4592C4;
-    }
-}
-
-@media (min-width: 768px) {
-    body {
-        background: rgb(255, 255, 255);
-        background: linear-gradient(142deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 23%, rgb(255, 255, 255) 45%, rgb(255, 255, 255) 69%, rgrgb(255, 255, 255)00%);
-    }
-
-    .pokedex {
-        background: rgb(173, 44, 44);
-        background: linear-gradient(142deg, rgba(173, 44, 44, 1) 0%, rgba(230, 56, 56, 1) 23%, rgba(170, 11, 11, 1) 45%, rgba(195, 73, 73, 1) 69%, rgba(153, 13, 13, 1) 100%);
-        margin-top: 150px;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 1000px;
-        height: 600px;
-        border-radius: 25px;
-        display: flex;
-        -webkit-box-shadow: 6px 6px 0px 0px rgba(113, 16, 16, 1);
-        -moz-box-shadow: 6px 6px 0px 0px rgba(113, 16, 16, 1);
-        box-shadow: 6px 6px 0px 0px rgba(113, 16, 16, 1);
-
-        &__middle {
-            background: rgb(179, 47, 47);
-            background: linear-gradient(90deg, rgba(179, 47, 47, 1) 0%, rgba(139, 10, 10, 1) 50%, rgba(181, 6, 6, 1) 100%);
-            border: 3px solid #8f1111;
-            display: block;
-            width: 4%;
-        }
-
-        &__leftcard {
-            width: 47%;
-            padding: 5%;
-            border-bottom-left-radius: 25px;
-            border-top-left-radius: 25px;
-        }
-
-        &__middle {
-            width: 6%;
-        }
-
-        &__rightcard {
-            padding: 5%;
-            width: 47%;
-            border-bottom-right-radius: 25px;
-            border-top-right-radius: 25px;
-        }
-
-        &__switch {
-            margin-top: 15%;
-        }
-
-        &__screen {
-            height: 250px;
-            margin-bottom: 15%;
-        }
-
-        &__name--value,
-        &__weight--value,
-        &__height--value {
-            align-content: center;
-            padding-top: 60px;
-            text-align: center;
-            font-size: 20px;
-        }
-
-
     }
 }

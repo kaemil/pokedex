@@ -1,0 +1,90 @@
+.pokedex__ {
+    &__buttons--size:hover,
+    &__buttons--size:focus {
+        background: #396ab4;
+        background: -webkit-gradient(linear, left bottom, left top, from(#396ab4), color-stop(32%, #265db0), color-stop(61%, #164fa6), to(#0045ac));
+        background: linear-gradient(0deg, #396ab4 0%, #265db0 32%, #164fa6 61%, #0045ac 100%);
+    }
+
+    &__types--bug {
+        background-color: #729F3F;
+    }
+
+    &__types--dragon {
+        background: #f16e57;
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #f16e57), color-stop(50%, #53a4cf));
+        background: linear-gradient(0deg, #f16e57 50%, #53a4cf 50%);
+    }
+
+    &__types--fairy {
+        background-color: #FEBAEA;
+    }
+
+    &__types--fire {
+        background-color: #FD7D24;
+    }
+
+    &__types--ghost {
+        background-color: #7B62A3;
+    }
+
+    &__types--ground {
+        background: #ab9842;
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #ab9842), color-stop(50%, #f7de3f));
+        background: linear-gradient(0deg, #ab9842 50%, #f7de3f 50%);
+    }
+
+    &__types--normal {
+        background-color: #A4ACAF;
+    }
+
+    &__types--psychic {
+        background-color: #F366B9;
+    }
+
+    &__types--steel {
+        background-color: #9EB7B8;
+    }
+
+    &__types--dark {
+        background-color: #707070;
+    }
+
+    &__types--electric {
+        background-color: #EED535;
+    }
+
+    &__types--fighting {
+        background-color: #D56723;
+    }
+
+    &__types--flying {
+        background: #bdb9b8;
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #bdb9b8), color-stop(50%, #3dc7ef));
+        background: linear-gradient(0deg, #bdb9b8 50%, #3dc7ef 50%);
+    }
+
+    &__types--grass {
+        background-color: #9BCC50;
+    }
+
+    &__types--ice {
+        background-color: #51C4E7;
+    }
+
+    &__types--poison {
+        background-color: #BA7FCA;
+    }
+
+    &__types--rock {
+        background-color: #A38C21;
+    }
+
+    &__types--water {
+        background-color: #4592C4;
+    }
+
+
+
+
+}

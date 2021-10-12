@@ -1,0 +1,65 @@
+@media (min-width: 768px) {
+  body {
+    background: white;
+    background: linear-gradient(142deg, white 0%, white 23%, white 45%, white 69%, rgrgb(255, 255, 255) 0%);
+  }
+  .pokedex {
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    height: 600px;
+    border-radius: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-shadow: 6px 6px 0px 0px #711010;
+    box-shadow: 6px 6px 0px 0px #711010;
+  }
+  .pokedex__middle {
+    background: #b32f2f;
+    background: -webkit-gradient(linear, left top, right top, from(#b32f2f), color-stop(50%, #8b0a0a), to(#b50606));
+    background: linear-gradient(90deg, #b32f2f 0%, #8b0a0a 50%, #b50606 100%);
+    border: 3px solid #8f1111;
+    display: block;
+    width: 4%;
+  }
+  .pokedex__leftcard {
+    background: #df5858;
+    background: -webkit-gradient(linear, left bottom, left top, from(#df5858), color-stop(32%, #dd3131), color-stop(61%, #c81a1a), to(#c00c0c));
+    background: linear-gradient(0deg, #df5858 0%, #dd3131 32%, #c81a1a 61%, #c00c0c 100%);
+    width: 47%;
+    padding: 5%;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+  }
+  .pokedex__middle {
+    width: 6%;
+  }
+  .pokedex__rightcard {
+    background: #df5858;
+    background: -webkit-gradient(linear, left bottom, left top, from(#df5858), color-stop(32%, #dd3131), color-stop(61%, #c81a1a), to(#c00c0c));
+    background: linear-gradient(0deg, #df5858 0%, #dd3131 32%, #c81a1a 61%, #c00c0c 100%);
+    padding: 5%;
+    width: 47%;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .pokedex__switch {
+    margin-top: 15%;
+  }
+  .pokedex__screen {
+    height: 250px;
+    margin-bottom: 15%;
+  }
+  .pokedex__name--value,
+  .pokedex__weight--value,
+  .pokedex__height--value {
+    -ms-flex-line-pack: center;
+    align-content: center;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=mediaScreen.css.map */
