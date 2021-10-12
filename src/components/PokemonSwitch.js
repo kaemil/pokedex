@@ -2,7 +2,7 @@ import React,{useEffect} from 'react';
 
 // ID switcher
 
-function PokemonSwitch ({idCountDown,idCountUp}){
+function PokemonSwitch ({idCountDown,idCountUp,id}){
     // Creating eventListeners
     // Making possible for user to use arrow key to change pokemon ID
     useEffect(()=>{
@@ -31,6 +31,7 @@ function PokemonSwitch ({idCountDown,idCountUp}){
                 className='pokedex__switchButton--arrow' 
                 onClick={idCountDown}
                 ><i className="fas fa-chevron-left"></i>-</button>
+            <span>#{id}</span>
             <button 
             name="next"
             className='pokedex__switchButton--arrow' 

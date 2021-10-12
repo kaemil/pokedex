@@ -8,14 +8,18 @@ import './css/media.css'
 function App(){
     const [pokemonID,setPokemonID] = useState(1)
     const [pokemonData, setPokemonData] = useState({})
-    const [choosenButton,setChoosenButton] = useState('Name')
+    const [choosenButton,setChoosenButton] = useState('name')
+    const [status,setStatus] = useState(false)
 
     //Fetching data from PokeAPI
     useEffect(()=>{
         fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonID}`)
-            .then(response => response.json())
+            .then(response =>response.json())
             .then(data => {
-                setPokemonData(data)})
+                setPokemonData(data)
+                setStatus(true)
+            })
+
     },[pokemonID])
 
     //Changing ID using buttons
@@ -26,31 +30,37 @@ function App(){
 
     //Changing data on consol after button click
     const handleButton = (button) => setChoosenButton (button)
-    
-
-    return(
-      <div className='pokedex'>
-        <div className='pokedex__leftcard'>
-          <PokemonImage 
-              pokemonID={pokemonID}
-          />
-          <PokemonSwitch
-            idCountDown={idCountDown}
-            idCountUp={idCountUp}
-            />
-        </div>
-        <div className='pokedex__middle'></div>
-        <div className='pokedex__rightcard'>              
-            <PokemonConsole 
-                choosenButton={choosenButton}
-            />
-            <PokemonConsoleButton 
-            handleButton={handleButton}
-            pokemonData={pokemonData}
-            />
-        </div>
-      </div>
-    )
+    if(status){
+        return(
+            <div className='pokedex'>
+              <div className='pokedex__leftcard'>
+                <PokemonImage 
+                    pokemonID={pokemonID}
+                />
+                <PokemonSwitch
+                  id={pokemonID}
+                  idCountDown={idCountDown}
+                  idCountUp={idCountUp}
+                  />
+              </div>
+              <div className='pokedex__middle'></div>
+              <div className='pokedex__rightcard'>              
+                  <PokemonConsole 
+                      pokemonID={pokemonID}
+                      pokemonData={pokemonData}
+                      choosenButton={choosenButton}
+                  />
+                  <PokemonConsoleButton 
+                  handleButton={handleButton}
+                  pokemonData={pokemonData}
+                  />
+              </div>
+            </div>
+          )} else{
+              return(
+                  <div>Loading...</div>
+              )
+          }
 }
 
 export default App

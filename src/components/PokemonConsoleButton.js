@@ -3,7 +3,7 @@ import React from 'react';
 // Console buttons
 
 function PokemonConsoleButton ({handleButton}){
-    const buttonsNames=['Name','Abilities','Height','Weight','Stats','Types','Evolution']
+    const buttonsNames=['Name','Abilities','Height','Weight','Stats','Types']
     const buttons = buttonsNames.map((button,index) =>
         <button 
         className='pokedex__buttons--size' 
