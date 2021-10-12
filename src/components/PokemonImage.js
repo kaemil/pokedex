@@ -17,7 +17,7 @@ function PokemonImage ({pokemonID}){
             <div className='pokedex__image pokedex__image--frame'>
             <div className='pokedex__image--inside' key={pokemonID}>
                 <img src={`https://assets.pokemon.com/assets/cms2/img/pokedex/full/${imgID(pokemonID)}.png`}
-                alt="asd" copyright="asdasd" ></img>
+                alt="Pokemon" copyright="asdasd" ></img>
             </div>
             </div>
         )

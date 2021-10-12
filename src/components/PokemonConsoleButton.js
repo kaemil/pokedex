@@ -6,9 +6,10 @@ function PokemonConsoleButton ({handleButton}){
     const buttonsNames=['Name','Abilities','Height','Weight','Stats','Types']
     const buttons = buttonsNames.map((button,index) =>
         <button 
-        className='pokedex__buttons--size' 
-        onClick={()=>handleButton(button)}
-        key={index}>
+            className='pokedex__buttons--size' 
+            onClick={()=>handleButton(button)}
+            key={index}
+        >
         {button}
         </button>
         )

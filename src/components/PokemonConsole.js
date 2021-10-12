@@ -4,9 +4,9 @@ import PokemonConsoleOption from './PokemonConsoleOption'
 
 function PokemonConsole({pokemonID,pokemonData,choosenButton}){
         
-       return(
+    return(
         <div className="pokedex__screen">
-            <div className='pokedex__'> 
+            <div className={`pokedex__${choosenButton.toLowerCase()}`}> 
                 <PokemonConsoleOption 
                     pokemonID={pokemonID}
                     pokemonData={pokemonData}

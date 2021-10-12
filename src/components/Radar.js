@@ -1,11 +1,9 @@
 import React from "react";
-import Chart from "apexcharts";
+import Chart from 'react-apexcharts'
 
 //Chart to show poke stats
 
-class RadarChart extends React.Component {
-
-  render() {
+function RadarChart({pokemonData}){
     const state = {
       series: [{
         name: 'Points',
@@ -83,6 +81,9 @@ class RadarChart extends React.Component {
       }]
       },
     };
+
+    state.series[0].data = pokemonData.stats.map(element => element.base_stat)
+
     return (
       <Chart options = {
         state.options
@@ -96,7 +97,6 @@ class RadarChart extends React.Component {
       /
       >
     );
-  }
 }
 
 export default RadarChart;

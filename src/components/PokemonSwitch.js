@@ -1,5 +1,6 @@
 import React,{useEffect} from 'react';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft,faChevronRight } from '@fortawesome/free-solid-svg-icons'
 // ID switcher
 
 function PokemonSwitch ({idCountDown,idCountUp,id}){
@@ -23,20 +24,21 @@ function PokemonSwitch ({idCountDown,idCountUp,id}){
 
     return(
         <div className='pokedex__switch'>
-            <div className='pokedex__switchID'>
-            </div>
+            <div className='pokedex__switchID'>#{id}</div>
             <div className='pokedex__switchButton'>
+            
+            
             <button 
                 name="previous"
                 className='pokedex__switchButton--arrow' 
                 onClick={idCountDown}
-                ><i className="fas fa-chevron-left"></i>-</button>
-            <span>#{id}</span>
+            ><FontAwesomeIcon icon={faChevronLeft}/></button>
+            <div></div>
             <button 
-            name="next"
-            className='pokedex__switchButton--arrow' 
-            onClick={idCountUp}
-            ><i className="fas fa-chevron-right"></i>+</button>
+                name="next"
+                className='pokedex__switchButton--arrow' 
+                onClick={idCountUp}
+            ><FontAwesomeIcon icon={faChevronRight}/></button>
             </div>
         </div>
     )
