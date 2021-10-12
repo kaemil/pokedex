@@ -59,7 +59,7 @@ function App(){
             </div>
         )} else{
             return(
-                <div>Loading...</div>
+                <h1 className="loading">Loading...</h1>
             )
     }
 }

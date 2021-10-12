@@ -1,3 +1,8 @@
+.loading {
+  text-align: center;
+  padding-top: 200px;
+}
+
 .pokedex__leftcard {
   background: #df5858;
   background: -webkit-gradient(linear, left bottom, left top, from(#df5858), color-stop(32%, #dd3131), color-stop(61%, #c81a1a), to(#c00c0c));
