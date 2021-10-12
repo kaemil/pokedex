@@ -13,6 +13,9 @@
     background: #cfcfcf;
     background: -webkit-gradient(linear, left bottom, left top, from(#cfcfcf), color-stop(32%, #cbcbcb), color-stop(61%, #bdbdbd), to(#a7a7a7));
     background: linear-gradient(0deg, #cfcfcf 0%, #cbcbcb 32%, #bdbdbd 61%, #a7a7a7 100%);
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(129, 129, 129, 1);
+    -moz-box-shadow: 0px 3px 0px 0px rgba(129, 129, 129, 1);
+    box-shadow: 0px 3px 0px 0px rgba(129, 129, 129, 1);
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding-top: 100%;
@@ -72,6 +75,7 @@
 
 .pokedex__switchButton button,
 .pokedex__switchButton div {
+    cursor: pointer;
     height: 40px;
     width: 40px;
     font-size: 24px;
@@ -90,8 +94,8 @@
 }
 
 .pokedex__screen {
-    -webkit-box-shadow: 0px 5px 0px 0px #2a7129;
-    box-shadow: 0px 5px 0px 0px #2a7129;
+    -webkit-box-shadow: 0px 3px 0px 0px #2a7129;
+    box-shadow: 0px 3px 0px 0px #2a7129;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -178,12 +182,13 @@
     height: 40px;
     border: none;
     border-radius: 15px;
-    -webkit-box-shadow: 0px 2px 0px 0px #144ea6;
-    box-shadow: 0px 2px 0px 0px #144ea6;
+    -webkit-box-shadow: 0px 3px 0px 0px #144ea6;
+    box-shadow: 0px 3px 0px 0px #144ea6;
 }
 
 .pokedex__buttons--size:hover,
-.pokedex__buttons--size:focus {
+.pokedex__buttons--size:active {
+    cursor: pointer;
     background: #396ab4;
     background: -webkit-gradient(linear, left bottom, left top, from(#396ab4), color-stop(32%, #265db0), color-stop(61%, #164fa6), to(#0045ac));
     background: linear-gradient(0deg, #396ab4 0%, #265db0 32%, #164fa6 61%, #0045ac 100%);

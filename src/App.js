@@ -3,7 +3,7 @@ import PokemonImage from './components/PokemonImage'
 import PokemonSwitch from './components/PokemonSwitch'
 import PokemonConsoleButton from './components/PokemonConsoleButton'
 import PokemonConsole from './components/PokemonConsole'
-import './css/media.css'
+import './css/media.css'    
 import './css/pokemonTypesStyle.css'
 import './css/mediaScreen.css'
 
@@ -15,13 +15,13 @@ function App(){
 
     //Fetching data from PokeAPI
     useEffect(()=>{
-        fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonID}`)
-            .then(response =>response.json())
-            .then(data => {
-                setPokemonData(data)
-                setStatus(true)
-            })
-
+        async function fetchPokemons(){
+            const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonID}`)
+            const data = await response.json()
+            setPokemonData(data)
+            setStatus(true)
+        }
+        fetchPokemons()
     },[pokemonID])
 
     //Changing ID using buttons
