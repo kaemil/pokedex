@@ -1,9 +1,3 @@
-.pokedex__buttons--size:hover, .pokedex__buttons--size:focus {
-  background: #396ab4;
-  background: -webkit-gradient(linear, left bottom, left top, from(#396ab4), color-stop(32%, #265db0), color-stop(61%, #164fa6), to(#0045ac));
-  background: linear-gradient(0deg, #396ab4 0%, #265db0 32%, #164fa6 61%, #0045ac 100%);
-}
-
 .pokedex__types--bug {
   background-color: #729F3F;
 }

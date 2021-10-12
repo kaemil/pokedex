@@ -76,10 +76,11 @@ body {
 
 .pokedex__switchButton button,
 .pokedex__switchButton div {
+  cursor: pointer;
   height: 40px;
   width: 40px;
   font-size: 24px;
-  background-color: #181414;
+  background-color: #635b5b;
   outline: none;
   border-radius: 10px;
 }
@@ -170,19 +171,13 @@ body {
 
 .pokedex__buttons--size {
   font-size: 18px;
-  background: #457ed4;
-  background: -webkit-gradient(linear, left bottom, left top, from(#457ed4), color-stop(32%, #2c6ed1), color-stop(61%, #1b64d2), to(#0055d4));
-  background: linear-gradient(0deg, #457ed4 0%, #2c6ed1 32%, #1b64d2 61%, #0055d4 100%);
   height: 40px;
-  border: none;
   border-radius: 15px;
-  -webkit-box-shadow: 0px 2px 0px 0px #144ea6;
-  box-shadow: 0px 2px 0px 0px #144ea6;
+  background: -webkit-gradient(linear, left bottom, left top, from(#437cd1), color-stop(32%, #3071d3), color-stop(61%, #1e66d3), to(#0158da));
+  background: linear-gradient(0deg, #437cd1 0%, #3071d3 32%, #1e66d3 61%, #0158da 100%);
 }
 
-.pokedex__buttons--size:hover, .pokedex__buttons--size:active {
-  background: #396ab4;
-  background: -webkit-gradient(linear, left bottom, left top, from(#396ab4), color-stop(32%, #265db0), color-stop(61%, #164fa6), to(#0045ac));
-  background: linear-gradient(0deg, #396ab4 0%, #265db0 32%, #164fa6 61%, #0045ac 100%);
+.pokedex__buttons--size:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=media.css.map */

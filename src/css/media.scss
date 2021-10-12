@@ -63,10 +63,11 @@ body {
 
     &__switchButton button,
     &__switchButton div {
+        cursor: pointer;
         height: 40px;
         width: 40px;
         font-size: 24px;
-        background-color: #181414;
+        background-color: #635b5b;
         outline: none;
         border-radius: 10px;
     }
@@ -147,19 +148,13 @@ body {
 
     &__buttons--size {
         font-size: 18px;
-        background: rgb(69, 126, 212);
-        background: linear-gradient(0deg, rgba(69, 126, 212, 1) 0%, rgba(44, 110, 209, 1) 32%, rgba(27, 100, 210, 1) 61%, rgba(0, 85, 212, 1) 100%);
         height: 40px;
-        border: none;
         border-radius: 15px;
-        -webkit-box-shadow: 0px 2px 0px 0px rgba(20, 78, 166, 1);
-        -moz-box-shadow: 0px 2px 0px 0px rgba(20, 78, 166, 1);
-        box-shadow: 0px 2px 0px 0px rgba(20, 78, 166, 1);
+        background: -webkit-gradient(linear, left bottom, left top, from(#396ab4), color-stop(32%, #265db0), color-stop(61%, #164fa6), to(#0045ac));
+        background: linear-gradient(0deg, #437cd1 0%, #3071d3 32%, #1e66d3 61%, #0158da 100%);
     }
 
-    &__buttons--size:hover,
-    &__buttons--size:active {
-        background: rgb(57, 106, 180);
-        background: linear-gradient(0deg, rgba(57, 106, 180, 1) 0%, rgba(38, 93, 176, 1) 32%, rgba(22, 79, 166, 1) 61%, rgba(0, 69, 172, 1) 100%);
+    &__buttons--size:hover {
+        cursor: pointer;
     }
 }
