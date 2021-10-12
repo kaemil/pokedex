@@ -3,6 +3,10 @@
   padding-top: 400px;
 }
 
+body {
+  margin: 0;
+}
+
 .pokedex__leftcard {
   background-color: #C00C0C;
   padding: 10%;
